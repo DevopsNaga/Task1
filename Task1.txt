@@ -1,0 +1,7 @@
+# Create 20 .txt files
+touch file{1..20}.txt
+
+# Rename the first 5 files to .yml extension
+for i in {1..5}; do
+  mv file${i}.txt file${i}.yml
+done
